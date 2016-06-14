@@ -76,7 +76,7 @@
 	     */
 	    value: function initialize() {
 	      _html2.default.query('.post').only(function (el) {
-	        return el.query('.tag-link').textContent == Copyrighted.options.tag;
+	        return el.query('.tag-link').textContent === Copyrighted.options.tag;
 	      }).each(function (el) {
 	        return new Copyrighted(el);
 	      });
@@ -138,7 +138,7 @@
 	  tag: 'copyright',
 	  showOnce: true,
 	  rightClick: true,
-	  message: 'This post is copyrighted, you must credit the author if you want to repost somewhere.<br>Don\'t be an asshole, thanks!'
+	  message: '\n      This post is copyrighted, you must credit the author if you want to repost somewhere.<br>\n      Don\'t be an asshole, thanks!\n    '
 	};
 	
 	
